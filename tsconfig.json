@@ -1,0 +1,37 @@
+{
+    "name": "claude-code",
+    "version": "1.0.0",
+    "description": "Claude Code as a virtual teammate - auto-review PRs, fix CI errors, and handle GitHub issues",
+    "main": "src/index.ts",
+    "scripts": {
+          "reviewer": "tsx src/github-reviewer.ts",
+          "ci-fixer": "tsx src/ci-fixer.ts",
+          "issue-handler": "tsx src/issue-handler.ts",
+          "monitor": "tsx src/agent-monitor.ts",
+          "dev": "tsx src/advanced-agent.ts",
+          "build": "tsc",
+          "start": "node dist/index.js"
+    },
+    "keywords": [
+          "claude",
+          "ai",
+          "code-review",
+          "github",
+          "automation",
+          "ci-cd",
+          "agent-sdk"
+    ],
+    "author": "kaykay377-expert",
+    "license": "MIT",
+    "dependencies": {
+          "@anthropic-ai/claude-agent-sdk": "^1.0.0"
+    },
+    "devDependencies": {
+          "@types/node": "^20.10.0",
+          "typescript": "^5.3.0",
+          "tsx": "^4.7.0"
+    },
+    "engines": {
+          "node": ">=18.0.0"
+    }
+}
